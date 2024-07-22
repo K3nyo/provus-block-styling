@@ -1646,3 +1646,35 @@ body.js-off-canvas-dialog-open::after {
   position: absolute;
   z-index: 100;
 }
+
+.browse-library-icon {
+  background: url('../images/layout_builder/browse-library.svg') no-repeat center 16px !important;
+  background-size: 32px !important;
+  height: 62px !important;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &:after {
+    content: " ";
+    background: transparent no-repeat center center !important;
+    position: absolute;
+    background-size: 20px !important;
+    width: 20px; height: 20px;
+    top: 4px;
+    right: 24px;
+  }
+
+  &.browse-library-bundle-provus_heading:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/heading.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_button:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/button.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_divider_line {
+    display: none;
+  }
+}
