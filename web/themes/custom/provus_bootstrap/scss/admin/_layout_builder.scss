@@ -1646,3 +1646,206 @@ body.js-off-canvas-dialog-open::after {
   position: absolute;
   z-index: 100;
 }
+
+.browse-library-icon {
+  background: url('../images/layout_builder/browse-library.svg') no-repeat center 16px !important;
+  background-size: 32px !important;
+  height: 62.72px !important;
+  position: relative;
+  box-shadow: none !important;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  &:after {
+    content: " ";
+    background: transparent no-repeat center center !important;
+    position: absolute;
+    background-size: 20px !important;
+    width: 20px; height: 20px;
+    top: 4px;
+    right: 24px;
+  }
+
+  &.browse-library-bundle-provus_heading:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/heading.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_button:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/button.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_divider_line {
+    display: none;
+  }
+
+  &.browse-library-bundle-provus_basic_text:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/basic.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_basic_text {
+    box-shadow: 1px 0 0 0 #D0D5DD !important;
+  }
+
+  &.browse-library-bundle-provus_media:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/media.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_banner:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/banner.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_card:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/card.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_testimonial:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/testimonial.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_testimonial {
+    box-shadow: 1px 1px 0 0 #D0D5DD !important;
+  }
+
+  &.browse-library-bundle-provus_cta:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/cta.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_cta {
+    box-shadow: 1px 0 0 0 #D0D5DD !important;
+  }
+
+  &.browse-library-bundle-provus_list:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/list.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_files_list:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/files-list.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_accordion:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/accordion.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_accordion {
+    box-shadow: 1px 0 0 0 #D0D5DD !important;
+  }
+
+  &.browse-library-bundle-provus_faq_group:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/accordion.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_person_list:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/list.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_photo_gallery:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/photogallery.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_photo_gallery {
+    box-shadow: 1px 0 0 0 #D0D5DD !important;
+  }
+
+  &.browse-library-bundle-provus_tabs:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/tabs.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_group:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/group.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_group_automatic:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/group-auto.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_group_automatic {
+    box-shadow: 1px 0 0 0 #D0D5DD !important;
+  }
+
+  &.browse-library-bundle-provus_stat_group:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/stat.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_slideshow:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/slideshow.svg') !important;
+  }
+
+  &.browse-library-bundle-webform:after {
+    border-top: none;
+    background-image: url('/themes/custom/provus_bootstrap/images/components/webform.svg') !important;
+  }
+
+  &.browse-library-bundle-webform {
+    box-shadow: 1px 0 0 0 #D0D5DD !important;
+  }
+}
+
+.browser-block-library-blocks {
+  border: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  a {
+    width: rem-calc(135);
+  }
+
+  .flex-shrink-0 {
+    background-image: url('../images/layout_builder/warning.svg') !important;
+    background-repeat: no-repeat !important;
+    width: 120px !important;
+    max-width: 100px !important;
+    height: 100px !important;
+    margin-right: 0 !important;
+
+    use {
+      display: none;
+    }
+  }
+
+  hr {
+    display: none;
+  }
+
+  .alert-heading {
+    @include text-style-headline-h-4();
+  }
+
+  #text {
+    @include text-style-subheadline-sub-1();
+  }
+
+  em {
+    @include text-style-subheadline-sub-1();
+  }
+
+  .alert-warning {
+    flex-direction: column;
+    text-align: center;
+    border: none !important;
+  }
+}
+
+.ui-dialog-titlebar {
+  .ui-dialog-title {
+    font-size: 24px !important;
+    font-family: "Inter" !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    line-height: 32px !important;
+    letter-spacing: -0.46px !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+  }
+  .ui-dialog-titlebar-close {
+    background: url('../images/close.svg') !important;
+    background-repeat: no-repeat !important;
+    top: 50% !important;
+    right: -3% !important;
+  }
+}
+
+.ui-dialog-content a {
+  margin-left: rem-calc(10) !important;
+}
