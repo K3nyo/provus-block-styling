@@ -17,6 +17,7 @@ dependencies:
   - layout_builder_block_clone
   - layout_builder_iframe_modal
   - layout_builder_restrictions
+  - layout_builder_browser_block_library
   - lb_copy_section
   - pathauto
   - section_library
