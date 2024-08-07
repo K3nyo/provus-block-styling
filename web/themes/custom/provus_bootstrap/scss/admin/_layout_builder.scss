@@ -1245,10 +1245,10 @@ a > .layout-builder__link-wrapped {
         flex-basis: 33%;
         padding: 1rem 0;
         font-size: rem-calc(12);
-        box-shadow: 0 0 0 1px $lb-border-color;
+        border: .5px solid $lb-border-color;
         border-radius: 0;
         text-decoration: none;
-        color: black;
+        color: black !important;
         text-align: center;
         margin: 0 !important;
 
@@ -1385,7 +1385,7 @@ a > .layout-builder__link-wrapped {
   .ui-widget.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar {
     background-color: white !important;
     height: auto !important;
-    border-bottom: 1px solid $lb-window-summary !important;
+    border-bottom: none !important;
 
     .ui-dialog-titlebar-close {
       top: 70%;
@@ -1399,8 +1399,8 @@ a > .layout-builder__link-wrapped {
       color: black !important;
       margin-left: 0 !important;
       padding-left: 0 !important;
-      font-size: 23px !important;
-      font-weight: bold;
+      font-size: 24px !important;
+      font-weight: 600;
     }
   }
 
@@ -1650,8 +1650,9 @@ body.js-off-canvas-dialog-open::after {
 .browse-library-icon {
   background: url('../images/layout_builder/browse-library.svg') no-repeat center 16px !important;
   background-size: 32px !important;
-  height: 62px !important;
+  height: 62.72px !important;
   position: relative;
+  box-shadow: none !important;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1677,4 +1678,165 @@ body.js-off-canvas-dialog-open::after {
   &.browse-library-bundle-provus_divider_line {
     display: none;
   }
+
+  &.browse-library-bundle-provus_basic_text:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/basic.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_media:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/media.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_banner:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/banner.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_card:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/card.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_testimonial:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/testimonial.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_cta:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/cta.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_list:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/list.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_files_list:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/files-list.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_accordion:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/accordion.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_faq_group:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/accordion.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_person_list:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/list.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_photo_gallery:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/photogallery.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_tabs:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/tabs.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_group:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/group.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_group_automatic:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/group-auto.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_stat_group:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/stat.svg') !important;
+  }
+
+  &.browse-library-bundle-provus_slideshow:after {
+    background-image: url('/themes/custom/provus_bootstrap/images/components/slideshow.svg') !important;
+  }
+
+  &.browse-library-bundle-webform:after {
+    border-top: none;
+    background-image: url('/themes/custom/provus_bootstrap/images/components/Webform.svg') !important;
+  }
+    &:hover,
+    &:hover {
+      background-color: rgba(5, 80, 230, 0.1) !important;
+      filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+    }
+}
+
+.browser-block-library-blocks {
+  border: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  a {
+    width: rem-calc(135);
+  }
+
+  .flex-shrink-0 {
+    background-image: url('../images/layout_builder/warning.svg') !important;
+    background-repeat: no-repeat !important;
+    width: 120px !important;
+    max-width: 100px !important;
+    height: 100px !important;
+    margin-right: 0 !important;
+
+    use {
+      display: none;
+    }
+  }
+
+  hr {
+    display: none;
+  }
+
+  .alert-heading {
+    @include text-style-headline-h-4();
+  }
+
+  #text {
+    @include text-style-subheadline-sub-1();
+  }
+
+  em {
+    @include text-style-subheadline-sub-1();
+  }
+
+  .alert-warning {
+    flex-direction: column;
+    text-align: center;
+    border: none !important;
+  }
+}
+
+.ui-dialog-titlebar {
+  .ui-dialog-title {
+    font-size: 24px !important;
+    font-family: "Inter" !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+    line-height: 32px !important;
+    letter-spacing: -0.46px !important;
+    text-decoration: none !important;
+    text-transform: none !important;
+    padding-right: 0 !important;
+  }
+
+  .ui-dialog-titlebar-close {
+    background: url('../images/close.svg') !important;
+    background-repeat: no-repeat !important;
+    top: 30% !important;
+    margin-top: 0 !important;
+  }
+}
+
+.ui-dialog-content {
+  .form-type-search {
+      max-width: rem-calc(320);
+      margin: auto;
+  }
+
+  a {
+  margin-left: rem-calc(10) !important;
+  }
+}
+
+#drupal-off-canvas a {
+  padding-bottom: rem-calc(10);
+  color: $primary-colors-primary !important;
 }
